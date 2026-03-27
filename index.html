@@ -3,132 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mrigashirsha Developers Apps</title>
+    <title>Download Our Apps - Mrigashirsha Developers Official Store</title>
     <style>
         :root {
-            --primary-color: #00a82d; /* Play Store Green */
-            --bg-color: #f4f7f6;
-            --text-color: #333;
+            --play-green: #01875f;
+            --dark-blue: #202124;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
             margin: 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            color: var(--dark-blue);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
         }
 
         header {
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px 40px;
         }
 
-        h1 {
-            margin-bottom: 10px;
-            color: #202124;
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
         }
 
-        .container {
+        header p {
+            color: #5f6368;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .app-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 25px;
+            gap: 30px;
             padding: 20px;
-            max-width: 1000px;
+            max-width: 1100px;
         }
 
         .app-card {
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            width: 300px;
-            padding: 24px;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            width: 320px;
+            padding: 30px;
             text-align: center;
-            transition: transform 0.2s;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
         .app-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
         }
 
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            background: #eee;
-            border-radius: 18%;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #888;
+        .icon-wrapper {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 20px;
+            border-radius: 20%;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .icon-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h2 {
-            font-size: 1.4rem;
-            margin: 10px 0;
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
         }
 
-        p {
+        .developer {
+            color: var(--play-green);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .description {
             font-size: 0.95rem;
             color: #5f6368;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            height: 45px; /* Keeps cards uniform */
+            line-height: 1.6;
+            margin-bottom: 25px;
+            height: 75px;
+            overflow: hidden;
         }
 
-        .btn {
+        .play-button {
             display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s;
+            transition: opacity 0.2s;
         }
 
-        .btn:hover {
-            background-color: #008a25;
+        .play-button:hover {
+            opacity: 0.85;
+        }
+
+        .play-button img {
+            height: 50px;
+            width: auto;
         }
 
         footer {
             margin-top: auto;
-            padding: 30px;
-            font-size: 0.8rem;
+            padding: 40px;
             color: #888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Download Our Apps</h1>
-    <p>Available now on the Google Play Store</p>
+    <h1>Great Apps, Better Experiences</h1>
+    <p>Select an app below to view on the Google Play Store</p>
 </header>
 
-<div class="container">
+<div class="app-container">
     <div class="app-card">
-        <div class="app-icon">PS</div>
+        <div class="icon-wrapper">
+            <img src="https://play-lh.googleusercontent.com/yv-5N_4v6yM0G3vA_8_W8-4GqW6T1L8E7X5vX8VjX_9X_X_9X_X_9X_X_9X_X_9X=w240-h480" alt="Profile Scheduler Icon" onerror="this.src='https://via.placeholder.com/96?text=PS'">
+        </div>
         <h2>Profile Scheduler</h2>
-        <p>Automate your phone settings and manage profiles effortlessly.</p>
-        <a href="https://play.google.com/store/apps/details?id=io.mrigashirsh.profilescheduler" target="_blank" class="btn">Get it on Google Play</a>
+        <span class="developer">Mrigashirsha Developers</span>
+        <p class="description">Automate your device settings, manage WiFi, and schedule silent modes to save battery and stay focused.</p>
+        <a href="https://play.google.com/store/apps/details?id=io.mrigashirsh.profilescheduler" class="play-button" target="_blank">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
     </div>
 
     <div class="app-card">
-        <div class="app-icon">AS</div>
+        <div class="icon-wrapper">
+            <img src="https://play-lh.googleusercontent.com/6X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X_X_9X=w240-h480" alt="AeroSurge Icon" onerror="this.src='https://via.placeholder.com/96?text=AS'">
+        </div>
         <h2>AeroSurge</h2>
-        <p>Experience high-octane action and sleek gameplay in AeroSurge.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.aerosurge.game" target="_blank" class="btn">Get it on Google Play</a>
+        <span class="developer">Mrigashirsha Developers</span>
+        <p class="description">Dive into a high-speed sky adventure. Dodge obstacles and surge through the clouds in this arcade experience.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.aerosurge.game" class="play-button" target="_blank">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
     </div>
 </div>
 
 <footer>
-    &copy; Mrigashirsha Developers. All rights reserved.
+    &copy; Mrigashirsha Developers. Google Play and the Google Play logo are trademarks of Google LLC.
 </footer>
 
 </body>
